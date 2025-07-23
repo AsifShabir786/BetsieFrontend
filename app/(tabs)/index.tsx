@@ -22,7 +22,7 @@ export default function HomeScreen() {
         console.log('Access Token:', authentication.accessToken);
 
         // ✅ Send access token to NestJS backend
-        fetch('http://localhost:3000/users/google-login', {
+        fetch('http://192.168.18.55/:3000/users/google-login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

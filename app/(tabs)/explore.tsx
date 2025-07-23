@@ -17,7 +17,7 @@ export default function FacebookLoginScreen() {
         console.log('Facebook Access Token:', accessToken);
 
         // ✅ Send to NestJS backend
-        fetch('http://localhost:3000/users/facebook-login', {
+        fetch('http://192.168.18.55:3000/users/facebook-login', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ accessToken }),
