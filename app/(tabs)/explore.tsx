@@ -7,7 +7,7 @@ WebBrowser.maybeCompleteAuthSession();
 
 export default function FacebookLoginScreen() {
   const [request, response, promptAsync] = Facebook.useAuthRequest({
-    clientId: '442638155098647', // Replace with your Facebook App ID
+    clientId: '784547960567130', // Replace with your Facebook App ID
   });
 
   useEffect(() => {
